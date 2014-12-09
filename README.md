@@ -13,3 +13,8 @@ $('.menu').stickyMenu({
     className: 'fixed' // the class for the sticky menu  
 });
 ```
+
+License
+-------
+
+This code is licensed under the MIT license.
