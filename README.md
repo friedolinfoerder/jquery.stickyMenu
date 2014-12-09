@@ -10,7 +10,7 @@ $('.menu').stickyMenu();
 
 // or with options
 $('.menu').stickyMenu({
-    className: 'fixed' // the class for the sticky menu  
+    className: 'fixed' // the class for the sticky menu (default: sticky)
 });
 ```
 
