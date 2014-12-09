@@ -17,17 +17,16 @@
                 var scrollTop = $window.scrollTop();
                 if (scrollTop > offsetTop) {
                     if(!$sticky) {
-                        $this
-                            .after(function() {
-                                $sticky = $(this).clone().addClass(options.className);
-                                return $sticky;
-                            });
+                        $sticky = $this
+                            .clone()
+                            .addClass(options.className)
+                            .insertAfter($this);
                     }                    
                 } else if($sticky) {
                     $sticky.remove();
                     $sticky = null;
                 }
-            }.bind(this));
+            });
         });
     };
 }(jQuery));
